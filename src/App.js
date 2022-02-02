@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from "./pages/home/homePage";
 import NewsPage from "./pages/NewsPage/newsPage";
-import Image from "../public/images/thebulletins.png";
+
 
 const App = () => {
   return (
@@ -12,7 +12,7 @@ const App = () => {
         <Helmet>
           <meta property="og:title" content="European Travel Destinations" />
           <meta property="og:type" content="latest news" />
-          <meta property="og:image" content={Image} />
+          <meta property="og:image" content="./images/thebulletins.png" />
           <meta property="og:url" content="https://www.thebulletins.in/" />
           <meta name="twitter:card" content="summary_large_image" />
 
