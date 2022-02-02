@@ -1,0 +1,127 @@
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  padding-bottom: 18px;
+}
+
+@media (max-width: 600px) {
+  .header{
+    display: block;
+    padding-top: 8px;
+  }
+}
+
+
+
+.header-logo {
+  height: 47px;
+  margin-right: 54px;
+}
+
+
+
+.header-right {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  height: 72px;
+}
+
+.header-search-container {
+  height: 54px;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: var(--primary-box-shadow);
+  border: 1px solid var(--border-white);
+  width: 70%;
+  background-color: var(--primary-bg);
+}
+
+@media (max-width: 380px) {
+  .header-logo {
+    height: 37px;
+  }
+
+  .header-search-container{
+    height: 44px;
+  }
+}
+
+.header-searchBar {
+  display: flex;
+  padding: 0px 10px;
+  width: 100%;
+}
+
+.search-icon {
+  font-size: 20px;
+  color: var(--thebulletins-blue);
+  margin: 0px 12px;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+}
+
+.search-input-container {
+  position: absolute;
+  padding-left: 33px;
+}
+
+.search-input-result-container {
+  position: relative;
+  /* top: 58px; */
+  height: 54px;
+  width: 100%;
+  top: 50%;
+  transform: translateY(28%);
+}
+
+.search-result-container {
+  position: relative;
+  right: 55px;
+  height: auto;
+  width: 100%;
+  top: 50%;
+  padding: 5px;
+  border-radius: 8px;
+  box-shadow: var(--primary-box-shadow);
+  border: 1px solid var(--border-white);
+  width: 111.35%;
+  background-color: var(--primary-bg);
+}
+
+@media (max-width: 1140px) {
+  .search-result-container{
+    width: 114%;
+  }
+}
+
+
+.search-result-anchor {
+  display: block;
+  text-decoration: none;
+  font-size: 14px;
+  color: #757575;
+  padding: 4px 0px;
+  border-radius: 8px;
+}
+
+.search-result-anchor:hover {
+  background-color: var(--inactive-color);
+}
+
+.header-border-container {
+  box-shadow: var(--border-white) 0px -0.5px 0px inset;
+  position: sticky;
+  top: 0;
+  background-color: var(--inactive-color);
+  z-index: 1;
+}

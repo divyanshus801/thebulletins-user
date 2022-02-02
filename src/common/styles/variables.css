@@ -1,0 +1,14 @@
+:root{
+    --primary-box-shadow:rgb(28 28 28 / 8%) 0px 2px 8px;
+    --border-white:rgb(232, 232, 232);
+    --primary-bg:rgb(255, 255, 255);
+    --thebulletins-gray:rgb(207, 207, 207);;
+    --thebulletins-blue: #2b61a8;
+    --inactive-color:#f8f8f8;
+    --inactive-text:#3f3f3f;
+    --tag-red: #d92662;
+    --tag-blue: #256fef;
+    --tag-green: #267e3e;
+    --card-border: #eaeaea;
+    --primary-text: #2b2b2b;
+}

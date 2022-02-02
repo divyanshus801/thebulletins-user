@@ -1,0 +1,21 @@
+.category-icon{
+    height: 47px;
+    object-fit: cover;
+}
+
+.list-heading{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--thebulletins-blue);
+}
+
+.menu-icon{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--thebulletins-blue);
+}
+
+.list-item-text{
+    font-size: 20px;
+    font-weight: bolder;
+}
