@@ -12,7 +12,7 @@ const App = () => {
         <Helmet>
           <meta property="og:title" content="European Travel Destinations" />
           <meta property="og:type" content="latest news" />
-          <meta property="og:image" content="./images/thebulletins.png" />
+          <meta property="og:image" content="https://www.thebulletins.in/images/thebulletins.png" />
           <meta property="og:url" content="https://www.thebulletins.in/" />
           <meta name="twitter:card" content="summary_large_image" />
 
