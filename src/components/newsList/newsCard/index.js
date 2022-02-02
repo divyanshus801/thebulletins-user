@@ -3,8 +3,7 @@ import "./newsCard.css";
 import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
-import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
+
 
 const NewsCard = ({ news }) => {
   const API = process.env.REACT_APP_BACKEND;
@@ -14,7 +13,7 @@ const NewsCard = ({ news }) => {
     <div className="news-list cur-po">
       <div className="news-list-left">
         <div className="news-list-img-container">
-          <Link to={`/fullNews/${news._id}`}>
+          <a href={`/fullNews/${news._id}`}>
             <img
               className="news-list-img "
               alt={news.title}
@@ -24,7 +23,7 @@ const NewsCard = ({ news }) => {
                   : "http://www.aaru.edu.jo/websites/aaru2/wp-content/plugins/learnpress/assets/images/no-image.png?Mobile=1&Source=%2F%5Flayouts%2Fmobile%2Fdispform%2Easpx%3FList%3D78b536db%252De7c7%252D45d9%252Da661%252Ddb2a2aa2fbaf%26View%3D6efc759a%252D0646%252D433c%252Dab6e%252D2f027ffe0799%26RootFolder%3D%252Fwebsites%252Faaru2%252Fwp%252Dcontent%252Fplugins%252Flearnpress%252Fassets%252Fimages%26ID%3D4786%26CurrentPage%3D1"
               }
             />
-          </Link>
+          </a>
         </div>
         <div className="news-list-share-icon-container absolute-center">
           <a
@@ -56,9 +55,9 @@ const NewsCard = ({ news }) => {
       </div>
       <div className="news-list-right">
         <div className="news-list-title-container">
-          <Link className="news-list-title" to={`/fullNews/${news._id}`}>
+          <a className="news-list-title" href={`/fullNews/${news._id}`}>
             {news.title}
-          </Link>
+          </a>
         </div>
         <div className="news-list-category-container">
           <span className="news-list-category">{news.category.name}</span>

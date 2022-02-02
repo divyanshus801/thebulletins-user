@@ -1,4 +1,3 @@
-import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router';
@@ -10,7 +9,7 @@ import NewsList from '../../components/newsList';
 import './newsPage.css';
 
 const NewsPage = () => {
-  const [newsResults, setNewsResults] = useState();
+  // const [newsResults, setNewsResults] = useState();
   const [loadMore, setLoadMore] = useState(20);
 
   const dispatch = useDispatch();

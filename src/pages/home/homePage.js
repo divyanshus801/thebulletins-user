@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./homePage.css";
 import Header from "../../components/Header/index";
-import axios from "axios";
 import NewsList from "../../components/newsList";
 import { useDispatch, useSelector } from "react-redux";
 import { getAllNews } from "../../action";
@@ -9,7 +8,6 @@ import Footer from "../../components/Footer";
 
 const HomePage = () => {
   // const [newsArray, setNewsArray] = useState([]);
-  const [newsResults, setNewsResults] = useState();
   const [loadMore, setLoadMore] = useState(20);
 
   const dispatch = useDispatch();

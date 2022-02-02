@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
-import { Link } from "react-router-dom";
 import Sidebar from "../sidebar";
 import "./header.css";
 
@@ -25,13 +24,13 @@ const Header = ({ setCategory }) => {
         <div className="search-result-container ">
           {searchResults.map((news) => {
             return (
-              <Link
+              <a
                 className="search-result-anchor"
-                to={`/fullNews/${news._id}`}
+                href={`/fullNews/${news._id}`}
                 key={news._id}
               >
                 {news.title}
-              </Link>
+              </a>
             );
           })}
         </div>
@@ -42,12 +41,12 @@ const Header = ({ setCategory }) => {
   return (
     <div className="header-border-container">
       <div className="header max-width">
-      <Link to={'/'}>
+      <a href={'/'}>
         <img
           src="./../../images/thebulletins.png"
           alt="thebulletins"
           className="header-logo cur-po"
-        /></Link>
+        /></a>
         <div className="header-right">
           <div className="header-search-container">
             <div className="header-searchBar">

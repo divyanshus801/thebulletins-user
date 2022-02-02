@@ -5,13 +5,12 @@ import List from "@mui/material/List";
 import Divider from "@mui/material/Divider";
 import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
-import axios from "axios";
 import './sidebar.css';
-import { createMuiTheme, createTheme, ListItemIcon, ThemeProvider, useMediaQuery } from "@mui/material";
+import { ListItemIcon } from "@mui/material";
 import { useDispatch, useSelector } from "react-redux";
 import { getAllCategories } from "../../action/category.action";
 import { getAllNews, getAllNewsByCategoryId } from "../../action";
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 
 
