@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from "./pages/home/homePage";
 import NewsPage from "./pages/NewsPage/newsPage";
+import MetaImage from "./common/thebulletins-meta.png";
 
 const App = () => {
   return (
@@ -30,7 +31,7 @@ const App = () => {
           />
           <meta
             property="og:image"
-            content="https://www.thebulletins.in/images/thebulletins-meta.png"
+            content={MetaImage}
           />
         </Helmet>
         <Routes>
