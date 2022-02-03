@@ -9,6 +9,7 @@ const NewsList = ({ newsArray, loadMore, setLoadMore, newsResults }) => {
 
   return (
     <>
+    
       {newsArray.map((news) => {
         return <NewsCard news={news} key={news._id} />;
       })}
