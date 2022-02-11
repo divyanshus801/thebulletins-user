@@ -18,9 +18,7 @@ const Footer = () => {
               Home
             </Link>
 
-            <a href="#">About</a>
-
-            <a href="#">Faq</a>
+            <a href="#about">About</a>
           </p>
 
           <p className="footer-company-name">thebulletins.in © 2021</p>
@@ -30,14 +28,21 @@ const Footer = () => {
           <div>
             <i className="fa fa-map-marker"></i>
             <p>
-              <span>444 S. Cedros Ave</span> Solana Beach, California
+              <span></span> India
             </p>
           </div>
 
           <div>
+            <i className="fa fa-newspaper"></i>
+            <a href="/"><p >
+            Latest Trending
+            </p></a>
+          </div>
+
+          {/* <div>
             <i className="fa fa-phone"></i>
             <p>+1.555.555.5555</p>
-          </div>
+          </div> */}
 
           <div>
             <i className="fa fa-envelope"></i>
@@ -50,7 +55,7 @@ const Footer = () => {
         </div>
 
         <div className="footer-right">
-          <p className="footer-company-about">
+          <p className="footer-company-about" id="about">
             <span>About the company</span>
             Through the bulletins.in you will continue get the latest news from
             the country to abroad, along with important stories and political
@@ -59,28 +64,32 @@ const Footer = () => {
           </p>
 
           <div className="footer-icons">
-            <a href="#">
+            <a href="#about">
               <i className="fa fa-facebook"></i>
             </a>
-            <a href="#">
+            <a href="https://twitter.com/thebulletins_">
               <i className="fa fa-twitter"></i>
             </a>
-            <a href="#">
+            <a href="#about">
               <i className="fa fa-linkedin"></i>
             </a>
-            <a href="#">
-              <i className="fa fa-github"></i>
+            <a href="https://www.instagram.com/thebulletins_/">
+              <i className="fa fa-instagram"></i>
             </a>
           </div>
         </div>
 
         <hr style={{ width: "90%" }} />
-      <div className="name" >
-         Made by -
-        <a className="name-tag" href="https://www.linkedin.com/in/divyanshu-shukla-15a01a17b/" target="__blank">
-          Divyanshu shukla
-        </a>
-      </div>
+        <div className="name">
+          Made with ❤️ by&nbsp;
+          <a
+            className="name-tag"
+            href="https://www.linkedin.com/in/divyanshu-shukla-15a01a17b/"
+            target="__blank"
+          >
+            Divyanshu shukla
+          </a>
+        </div>
       </footer>
     </div>
   );

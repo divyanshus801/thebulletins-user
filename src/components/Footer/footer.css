@@ -195,4 +195,5 @@ section {
 
   .name-tag{
       text-decoration: none;
+	  color: var(--thebulletins-blue);
   }
