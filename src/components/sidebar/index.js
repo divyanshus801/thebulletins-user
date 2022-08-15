@@ -116,7 +116,7 @@ const Sidebar = () => {
   return (
     <div>
       <React.Fragment key={"left"}>
-      <i className="fi fi-bs-align-right absolute-center menu-icon" onClick={toggleDrawer("left", true)}  >
+      <i className="fas fa-bars align-right absolute-center menu-icon" onClick={toggleDrawer("left", true)}  >
       </i>
         <Drawer
           anchor={"left"}
